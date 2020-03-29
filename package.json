@@ -1,7 +1,7 @@
 {
   "name": "deploy-eip-1820",
   "description": "Helper to deploy the EIP 1820 Registry smart contract to a network using Ethers.js",
-  "version": "0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Brendan Asselstine <brendan@pooltogether.us>",
   "license": "MIT",
