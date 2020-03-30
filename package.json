@@ -3,8 +3,15 @@
   "description": "Helper to deploy the EIP 1820 Registry smart contract to a network using Ethers.js",
   "version": "0.1.0",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Brendan Asselstine <brendan@pooltogether.us>",
   "license": "MIT",
+  "peerDependencies": {
+    "ethers": "^4.0.45"
+  },
+  "devDependencies": {
+    "ethers": "^4.0.45"
+  },
   "scripts": {
     "prepack": "yarn dist",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
