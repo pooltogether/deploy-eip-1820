@@ -8,16 +8,16 @@ Uses [ethers.js](https://docs.ethers.io/ethers.js/html/index.html).
 
 # Setup
 
-Install `eip-1820-ethers` via yarn:
+Install `deploy-eip-1820` via yarn:
 
 ```sh
-$ yarn add eip-1820-ethers
+$ yarn add deploy-eip-1820
 ```
 
 or npm:
 
 ```sh
-$ npm i eip-1820-ethers
+$ npm i deploy-eip-1820
 ```
 
 # Usage
