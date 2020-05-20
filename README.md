@@ -30,7 +30,10 @@ const { deploy1820 } = require('deploy-eip-1820')
 async function deploy() {
     const wallet = ethers.Wallet.fromMnemonic("...your mnemonic...")
     // The wallet must have at least 0.08 Ether
-    await deploy1820(wallet)
+    const registryContract = await deploy1820(wallet)
+
+    // Now we have an Ethers Contract instance for the ERC1820 Registry contract
+    let implementer = await registryContract.getInterfaceImplementer('0x1234...', '0xINTERFACE_HASH')
 }
 
 ```
