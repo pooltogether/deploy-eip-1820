@@ -2,7 +2,7 @@ const ethers = require('ethers')
 
 const SIGNATURE_ADDRESS = '0xa990077c3205cbDf861e17Fa532eeB069cE9fF96'
 const REGISTRY_ADDRESS = '0x1820a4B7618BdE71Dce8cdc73aAB6C95905faD24'
-const COST = ethers.utils.bigNumberify('80000000000000000')
+const COST = ethers.BigNumber.from('80000000000000000')
 const ERC1820RegistryAbi = require('./ERC1820RegistryAbi')
 
 async function deploy1820(signer) {

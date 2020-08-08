@@ -4,7 +4,9 @@ Ethereum [EIP 1820](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1820.m
 
 This library ensures that the EIP 1820 registry smart contract exists on any given chain.  Particularly useful for test environments.
 
-Uses [ethers.js](https://docs.ethers.io/ethers.js/html/index.html).
+Uses [ethers.js v5](https://docs.ethers.io/v5).
+
+If you're using ethers.js v4 then try the 0.2 version.
 
 # Setup
 
